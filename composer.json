@@ -1,7 +1,7 @@
 {
     "name": "jsnlib/copy",
     "type": "library",
-    "description": "easy use ArrayObject",
+    "description": "",
     "keywords": ["array", "object", "convert", "ArrayObject"],
     "license": "MIT",
     "require": {
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jsnlib\\Copy\\": "src\\Urlimg"
+            "Jsnlib\\": "src\\"
         }
     }
 }
