@@ -1,0 +1,15 @@
+{
+    "name": "jsnlib/copy",
+    "type": "library",
+    "description": "easy use ArrayObject",
+    "keywords": ["array", "object", "convert", "ArrayObject"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jsnlib\\Copy\\": "src\\Urlimg"
+        }
+    }
+}
