@@ -20,10 +20,10 @@ $Urlimg
 	->copy();
 
 
-//3. 檢視成果, 注意型態是ArrayObject Object
+//3. 檢視成果
 $result = $Urlimg->result();
 
-if ($result !== false ) foreach ($result as $file)
+if ($result !== false) foreach ($result as $file)
 {
 	echo $file."<br>";
 }
