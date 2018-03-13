@@ -9,14 +9,14 @@ class Urlimg
 	private $orgary; // 原圖複製陣列
 	
 	//設定抓取圖片的網址
-	public function url($url)
+	public function url($url): object
 	{
 		$this->url					=	$url;
 		return $this;
 	}
 	
 	//最後就開始複製吧, 返回的是$this 供串接下去，若要減是成果請print_r public result()
-	public function copy($mode = 0775)
+	public function copy($mode = 0775): object
 	{
 		try
 		{
@@ -93,7 +93,7 @@ class Urlimg
 	
 	public function result()
 	{
-		return (!empty($this->result)) ? new \ArrayObject($this->result) : false;
+		return (!empty($this->result)) ? $this->result : false;
 	}
 	
 	
@@ -116,7 +116,7 @@ class Urlimg
 	
 	
 	//設定-縮放的寬高品質 resize(寬, 高, 0-100的JPG壓縮品質, 路徑, 自訂檔名)
-	public function resize($width, $height, $quantity, $save_dir, $newname = NULL)
+	public function resize(int $width, int $height, int $quantity, string $save_dir, string $newname = NULL)
 	{
 		try
 		{
